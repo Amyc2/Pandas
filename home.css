@@ -2,6 +2,12 @@ h1 {
     font-size: 300%;
 }
 
+ #First {
+    width: 1000px;
+    padding: 25px;
+    background: #FF8080;
+}
+
 
 ul {
     list-style-type: none;
