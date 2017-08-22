@@ -3,7 +3,7 @@
 <head>
   <title> Welcome to PandaLand! </title>
   <link rel="stylesheet" href="home.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
 <div class="dropdown">
   <button class="dropbtn"> 
@@ -187,6 +187,79 @@ It is easily recognized by the large, distinctive black patches around its eyes,
 </center>
 
 </div>
+  
+  
+<center>
+<div id="First">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="https://pbs.twimg.com/profile_images/816412511792545793/p9eTWzUV.jpg" style="width:100%">
+  <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="https://pbs.twimg.com/profile_images/423849886891511808/YHGBFigf.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="https://s-media-cache-ak0.pinimg.com/736x/55/a6/d3/55a6d3af9931198a930074fce1ccc8ad--panda-kawaii-cute-panda.jpg" style="width:100%" >
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="https://image.spreadshirtmedia.com/image-server/v1/mp/compositions/T461A1PA1086PT17X76Y14D1011288808S26/views/1,width=300,height=300,appearanceId=1,backgroundColor=E8E8E8/kawaii-coffee-panda-women-s-organic-t-shirt.jpg" style="width:100%" >
+  <div class="text">Caption Four</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
   
 </body>
 </html> 
