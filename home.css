@@ -2,6 +2,11 @@ h1 {
     font-size: 300%;
 }
 
+body {
+    font-family: Verdana,sans-serif;
+}
+
+
  #First {
     width: 1000px;
     padding: 25px;
