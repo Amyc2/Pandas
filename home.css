@@ -10,6 +10,9 @@ body {
     background-image: url("https://i.pinimg.com/originals/53/08/35/530835ff6fe3b30ed6626ea5f6153c9a.jpg");
 }
 
+#last {
+  padding: 20px ; 
+}
 
  #First {
     width: 1000px;
