@@ -4,7 +4,9 @@ h1 {
 
 body {
     font-family: Verdana,sans-serif;
-     
+    
+    padding: 50px ; 
+
     background-image: url("https://i.pinimg.com/originals/53/08/35/530835ff6fe3b30ed6626ea5f6153c9a.jpg");
 }
 
